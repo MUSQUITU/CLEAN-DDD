@@ -1,5 +1,5 @@
 import { AnswerQuestionUseCase } from './answer-question'
-import type { Answer } from '../entities/answer'
+import type { Answer } from '../../enterprise/entities/answer'
 import type { AnswersRepository } from '../repositories/answers-repository'
 
 const fakeAnswersRepository: AnswersRepository = {
