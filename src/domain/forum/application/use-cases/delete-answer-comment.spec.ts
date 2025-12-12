@@ -29,7 +29,7 @@ describe('Delete Answer Comment', () => {
 
   it('should not be able to delete another user answer comment.', async () => {
     const answerComment = makeAnswerComment({
-      authorId: new UniqueEntityID('autthor-1'),
+      authorId: new UniqueEntityID('author-1'),
     })
 
     await inMemoryAnswerCommentsRespository.create(answerComment)
