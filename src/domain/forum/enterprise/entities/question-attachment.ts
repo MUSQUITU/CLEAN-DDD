@@ -3,7 +3,7 @@ import type { UniqueEntityID } from '@/core/entities/unique-entity-id'
 
 interface QuestionAttachmentProps {
   questionId: UniqueEntityID
-  attachmentId: UniqueEntityID
+  attachmentsId: UniqueEntityID
 }
 
 export class QuestionAttachment extends Entity<QuestionAttachmentProps> {
@@ -12,7 +12,7 @@ export class QuestionAttachment extends Entity<QuestionAttachmentProps> {
   }
 
   get attachmentId() {
-    return this.props.attachmentId
+    return this.props.attachmentsId
   }
 
   static create(props: QuestionAttachmentProps, id?: UniqueEntityID) {
